@@ -1,3 +1,7 @@
+/**
+ * @author Olivarès Georges <dev@olivares-georges.fr>
+ */
+
 @import "bootstrap.min.css";
 @import "bootstrap-responsive.min.css";
 
@@ -30,6 +34,11 @@ html {
   padding: 0;
 }
 #head .search-bar label { line-height: 1em; }
+#head .search-bar input { padding: 1px 5px; }
+#head .search-bar input:focus { color: white; }
+#head .search-bar label span { display: inline-block; padding: 2px; padding-left: 8px; }
+#head > hgroup { margin: 0; padding: 2px; color: white; }
+#head > hgroup * { margin: 0; padding: 0; padding-left: 1em; font-size: 1em; line-height: 25px; }
 
 #menu ul { margin: 0; padding: 0; }
 #menu ul li { padding: 0; margin: 1px; list-style-type: none; width: 50px; height: 50px; background-color: black; }
@@ -43,6 +52,9 @@ html {
 #left li > a span { font-size: .75em; }
 #left li > a:hover { background-color: #26639C; color: white; text-decoration: none; }
 #left li > a:active { background-color: #3979B6; }
+#left li a { padding-left: 25px; }
+#left li a i { margin-left: -20px; margin-right: 3px; opacity: .15; }
+#left li a:hover i { opacity: 1; }
 
 
 #container {
@@ -78,9 +90,18 @@ html {
 section > header { z-index: 200; position: absolute; top: 0; left: 0; right: 0; padding: 0; margin: 0; box-shadow: 0 0 10px -4px #aeaeae; min-height: 25px; display: block; }
 section > header hgroup { padding: 2px; padding-left: 8px; color: lightgray; }
 section > header hgroup * { margin: 0; padding: 0; font-size: 1em; line-height: 25px; }
+section > header aside { position: absolute; right: 0; top: 0; }
+section > header aside ul { margin: 0; padding: 0; }
+section > header aside li { margin: 0; padding: 0; list-style-type: none; display: inline-block; }
+section > header aside a { padding: 0 8px; display: block; line-height: 30px; opacity: .5; }
+section > header aside a:hover { opacity: 1; }
 section .main { position: absolute; left: 0; bottom: 0; right: 0; top: 30px; padding: 4px 8px; overflow-y: scroll; z-index: 100; }
 
 section .main-form { margin-bottom: 70px; padding-top: 20px; }
+
+section article { background-color: #eaeaea; padding: 1em; }
+section article > header * { margin: 0; padding: 0; font-size: 1em; line-height: 1em; }
+section article > header { padding: 2px 0; border-bottom: 1px solid white; margin-bottom: .5em; }
 
 section ul.body { margin: 0; padding: 0; }
 section ul.body li { margin: 8px 0; padding: 5px; list-style-type: none; }
@@ -93,9 +114,27 @@ section table tbody tr { border-bottom: 4px solid white; }
 section table tbody tr:nth-child(odd) { background-color: #ECECEA; }
 section table tbody tr:nth-child(even) { background-color: #F3FAB6; }
 
-.form-actions { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; }
+.form-actions { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; text-align: right; }
+.form-signin { margin: 0; }
+.flash-msg { margin: 3em; }
 
+ul.actions { margin: 0; padding: 0; text-align: center; }
+ul.actions li { margin: 0; padding: 0; list-style-type: none; display: inline-block; opacity: .25; }
+ul.actions li:hover { opacity: 1; }
 
 /* GENERAL CSS */
 
 .text-center { text-align: center; }
+.text-center { text-align: center; }
+
+
+
+
+
+
+
+
+
+
+
+/* GENERAL CSS */
